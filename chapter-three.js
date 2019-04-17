@@ -14,13 +14,18 @@ minFinder(321, 123);
 //Recursion
 
 function isEven(num) {
-	if (num % 2 === 0) {
+	if (num === 0) {
 		return true;
-	} else if (num % 2 === 1) {
+	} else if (num === 1) {
 		return false;
+	} else if (num < 0) {
+		return isEven(-num);
 	} else {
-		return isEven(num -2);
+		return isEven(num - 2);
 	}
 }
 
-isEven(44);
+console.log(isEven(44));
+console.log(isEven(45));
+console.log(isEven(-44));
+console.log(isEven(-45));
