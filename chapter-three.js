@@ -32,14 +32,19 @@ console.log(isEven(-45));
 
 //Bean Counting
 
-function countBs(str) {
+function countChar(str, charac) {
 	let total = 0;
-	for(let i = 0; i < str.length; i ++) {
-		let letter = str.charAt(i);
-		if (letter === 'B') {
-			return total++;
+	for(let i = 0; i < str.length; i++) {
+		if (str[i] == charac) {
+			total = total + 1;
 		}
 	}
+	return total;
 }
 
-countBs('Bees Bees Bees');
+function countBs(str) {
+	return countChar(str, 'B');
+}
+
+console.log(countBs('Bees Bees Bees'));
+console.log(countChar('citrouille', 'i'));
