@@ -29,3 +29,17 @@ console.log(isEven(44));
 console.log(isEven(45));
 console.log(isEven(-44));
 console.log(isEven(-45));
+
+//Bean Counting
+
+function countBs(str) {
+	let total = 0;
+	for(let i = 0; i < str.length; i ++) {
+		let letter = str.charAt(i);
+		if (letter === 'B') {
+			return total++;
+		}
+	}
+}
+
+countBs('Bees Bees Bees');
