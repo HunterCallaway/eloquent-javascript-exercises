@@ -3,9 +3,9 @@
 function range(start, end) {
 	let numArray = [];
 	for(let i = start; i <= end; i++) {
-		numArray.push();
-		return numArray;
+		numArray.push(i);
 	}
+	return numArray;
 }
 
 range(5, 10);
