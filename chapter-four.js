@@ -22,3 +22,15 @@ function numberSummer(start, end) {
 
 console.log(numberSummer(3, 7));
 console.log(numberSummer(1, 10));
+
+//Reverse an Array
+
+function reverseArray(originalArray) {
+	let newArray = [];
+	for(let i = 0; i < originalArray.length; i++) {
+		newArray.push(originalArray.pop());
+	}
+	return newArray;
+}
+
+console.log(reverseArray([1, 2, 3, 4]));
