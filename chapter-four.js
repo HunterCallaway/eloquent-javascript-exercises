@@ -27,7 +27,7 @@ console.log(numberSummer(1, 10));
 
 function reverseArray(originalArray) {
 	let newArray = [];
-	for(let i = 0; i < originalArray.length; i++) {
+	for(let i = originalArray.length -1; i >= 0; i--) {
 		newArray.push(originalArray.pop());
 	}
 	return newArray;
